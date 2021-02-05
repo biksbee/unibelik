@@ -59,7 +59,7 @@
 	font-style: normal;
 }
 div{
-	transition: .5s ease;
+	
 }
 a{
 	color: var(--blue);
@@ -76,6 +76,7 @@ ul, li{
 .container{
 	width: 1170px;
 	margin: 0px auto;
+	transition: .5s ease;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
 .header{
@@ -645,9 +646,9 @@ input[type=text]:focus, input[type=text]:focus {
 	padding-top: 150px;
 }
 #column1{
-	margin: 0px auto;	
 	padding-bottom: 100px;
 	background-color: var(--blue);	
+	width: 47%;
 }
 .column{
 	display: flex;
@@ -673,7 +674,7 @@ input[type=text]:focus, input[type=text]:focus {
 	color: var(--white);
 }
 .pole111{
-	width: 70%;
+	width: 400px;
 	height: 60px;
 	margin: 25px 75px 0 75px;
 	border-radius: 2px;
@@ -687,7 +688,7 @@ input[type=text]:focus, input[type=text]:focus {
 
   	background: var(--white);
 	border-radius: 2px;
-	width: 70%;
+	width: 400px;
 	height: 60px;
 	margin: 35px 75px 0 75px; 
 	color: var(--blue);	
@@ -825,6 +826,12 @@ footer{
 	.header__burger{
 		display: none;
 	}
+	#column1{
+		width: 80%;
+	}
+	.pole111, .registerbtn{
+		width: 80%;
+	}
 }
 @media screen and (max-width: 1199px){
 	.container{
@@ -874,15 +881,6 @@ footer{
 		width: 300px;
 		min-width: 300px;
 	}
-	.contact_p1{
-		margin: 0 100px;
-	}
-	.pole111, .registerbtn{
-		width: 600px;
-	}
-	form{
-		margin: 0px;
-	}
 	.sbtn{
 		display: block;
 	}
@@ -891,6 +889,11 @@ footer{
  	}
  	#pole1.active, #pole2.active,#pole3.active{
 		display: block;
+	}
+	#column1{
+		width: 80%;
+	}
+	.pole111, .registerbtn{
 	}
 }
 @media screen and (max-width: 991px){
@@ -1031,11 +1034,11 @@ footer{
 	#wg5, #wg6, #wg7, #wg8{
 		border-bottom: 1px solid var(--blue);			
 	}
-	.contact_p1{
-		margin: 0 75px;
+	#column1{
+		width: 80%;
 	}
 	.pole111, .registerbtn{
-		width: 70%;
+		width: 75%;
 	}
 	.vstup{
 		background-image: none;
@@ -1050,10 +1053,10 @@ footer{
 		font-size: 30px;
 	}
 	.contact_p1{
-		margin: 0 5%;
+		margin: 0 auto;
 	}
 	.pole111, .registerbtn{
-		width: 70%;
+		width: 53%;
 	}
 	.header_menu.active{
         width: 300px;
@@ -1100,14 +1103,20 @@ footer{
 		width: 100%;
 		min-width: 300px;
 	}
+	#column1{
+		width: 80%;
+	}
+	.pole111, .registerbtn{
+		width: 65%;
+	}
 }
 @media screen and (max-width: 575px){
 	.container{
 		width: 100%;
 		padding: 0 15px;
 	}
-	.vstup_zayvka.vstup_slogan{
-		padding-top: 100px;
+	.vstup_zayvka .vstup_slogan{
+		padding-top: 0;
 	}
 	.sogla{
 		display: block;
@@ -1126,21 +1135,24 @@ footer{
     }
     .how_work_text{
     	font-size: 16px;
-    	margin: 10px;
     	text-align: center;
+    	margin: 0;
     }
     .vstup_text{
     	font-size: 40px;
     }
     .about_z{
-    	font-size: 30px;
+    	font-size: 26px;
+    }
+    .about_td{
+    	width: 100%;
+    	padding: 0;
     }
     .how_content{
-		max-width: 100%;
 		display: block;
 	}	
 	.chisla{
-		margin: 0 45%;
+		margin: 0 35%;
 		-webkit-text-stroke-width: 1px;
     	-webkit-text-stroke-color: black;
 		position: inherit;
@@ -1155,6 +1167,10 @@ footer{
 	.lanpole{
 		top: 310px;
 	}
-
+	.pole111, .registerbtn{
+		width: 70%;
+		height: 40px;
+		margin: 10px 45px;
+	}
 	
 }
