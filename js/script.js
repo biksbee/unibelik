@@ -15,32 +15,35 @@ $(document).ready(function(){
     $("html").attr("dir", "rtl");
   });  
 });
+
 $(document).ready(function() {
     $('.lan').click(function(event) {
         $('.lanpole').toggleClass('active');
     });
 });
+
 $(document).ready(function() {
     $('#rus, #ara, #eng').click(function(event) {
         $('.lanpole').removeClass('active');
     });
 });
+
 $(document).ready(function() {
   $('.header__burger').click(function(event) {
     $('.header__burger, .header_menu, .mm').toggleClass('active');
     });
 });
+
 $(document).ready(function(){
   $('.about_menu, .services_menu, .shares_menu, .contacts_menu, #rus, #ara, #eng, .toggle_lang').click(function(event){
       $('.header_menu, .header__burger, .mm').removeClass('active');
   });
 });
 
-
 jQuery(document).ready(function($) {
-  let t1 = $('#services_vod1');
-  let t2 = $('#services_vod2');
-  let t3 = $('#services_vod3');
+  let t1 = $('#pole1');
+  let t2 = $('#pole2');
+  let t3 = $('#pole3');
   let getT1Height = t1.outerHeight();
   let getT2Height = t2.outerHeight();
   let getT3Height = t3.outerHeight();
@@ -84,62 +87,33 @@ jQuery(document).ready(function($) {
 });
 
 
-jQuery(document).ready(function($){
-  let br = $('#btn_r');
-  let bl = $('#btn_l');
-  let ar = [3];
-  ar[0] = $('#pole1');
-  ar[1] = $('#pole2');
-  ar[2] = $('#pole3');
-  let i = 0, k = 0;
-    br.click(function(event) {
-        if(i==2){
-          ar[i].removeClass('active');
-          ar[i-2].addClass('active');
-          i=0;
+ jQuery(document).ready(function($){
+   let ar = [3];
+   ar[0] = $('#pole1');
+   ar[1] = $('#pole2');
+   ar[2] = $('#pole3');
+   let i = 0;
+    $('.services_photo').click(function(event) {
+         if(i==2){
+           ar[i].removeClass('active');
+           ar[i-2].addClass('active');
+           i=0;
           
-        }
-        else{
-          ar[i].removeClass('active');
-          ar[i+1].addClass('active');
-          i+=1;
-        }
-    });
-    bl.click(function(event){
-      if(i==0){
-        ar[i].removeClass('active');
-        i=2;
-        ar[i].addClass('active');
-      }
-      else{
-        ar[i].removeClass('active');
-        ar[i-1].addClass('active');
-        i-=1;    
-      }
-    });
-});
-/*
-$(document).ready(function() {
-  $("[data-toggle]").click(function() {
-    var toggle_el = $(this).data("toggle");
-    $(toggle_el).toggleClass("open-sidebar");
-  });
+         }
+         else{
+           ar[i].removeClass('active');
+           ar[i+1].addClass('active');
+           i+=1;
+         }
+     });
+ });
 
+$(document).ready(function() {
+  $('.services_photo').click(function(event) {
+    $('#help_text1, #help_text2, #help_text3').addClass('active');
+    });
 });
-$(".swipe-area").swipe({
-    swipeStatus:function(event, phase, direction, distance, duration, fingers)
-        {
-            if (phase=="move" && direction =="right") {
-                 $(".container").addClass("open-sidebar");
-                 return false;
-            }
-            if (phase=="move" && direction =="left") {
-                 $(".container").removeClass("open-sidebar");
-                 return false;
-            }
-        }
-});
-*/
+
 
 jQuery(document).ready(function($) {
   let t1 = $('#how_text1');
@@ -224,4 +198,3 @@ const btn = document.querySelector('.toggle_lang');
   btn.addEventListener('click', (e) => {
     toggleTheme();
   });  
-
