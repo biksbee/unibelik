@@ -144,6 +144,10 @@ ul, li{
 .toggle_lang.active{
 	background-image: url("icons/Day-Night Mode Switcher2.svg");
 }
+.Capa_1{
+	width: 35px;
+	margin: 0 5px;
+}
 /*///////////////////////////////////////////////////////////////////////////*/
 .scroll{
     position: fixed;
