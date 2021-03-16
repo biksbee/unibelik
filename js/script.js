@@ -41,6 +41,46 @@ $(document).ready(function(){
 });
 
 jQuery(document).ready(function($) {
+  let t1 = $('.services_z1');
+  let t2 = $('.services_z2');
+  let t3 = $('.services_z3');
+  let getT1Height = t1.outerHeight();
+  let getT2Height = t2.outerHeight();
+  let getT3Height = t3.outerHeight();
+  let max = 0;
+  let ar = [3];
+  ar[0]=getT1Height;
+  ar[1]=getT2Height;
+  ar[2]=getT3Height;
+  for (let i = 0; i < 2; i++){
+    if(ar[i]>max)
+      max=ar[i];
+  }
+  t1.css('min-height', max);
+  t2.css('min-height', max);
+  t3.css('min-height', max);  
+});
+jQuery(document).ready(function($) {
+  let t1 = $('.services_vod1');
+  let t2 = $('.services_vod2');
+  let t3 = $('.services_vod3');
+  let getT1Height = t1.outerHeight();
+  let getT2Height = t2.outerHeight();
+  let getT3Height = t3.outerHeight();
+  let max = 0;
+  let ar = [3];
+  ar[0]=getT1Height;
+  ar[1]=getT2Height;
+  ar[2]=getT3Height;
+  for (let i = 0; i < 2; i++){
+    if(ar[i]>max)
+      max=ar[i];
+  }
+  t1.css('min-height', max);
+  t2.css('min-height', max);
+  t3.css('min-height', max);  
+});
+jQuery(document).ready(function($) {
   let t1 = $('#pole1');
   let t2 = $('#pole2');
   let t3 = $('#pole3');
