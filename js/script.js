@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#header_menu, .vstup_zayvka").on("click","a", function (event) {
+    $("#header_menu, .vstup_zayvka, .header__logo").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
