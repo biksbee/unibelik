@@ -443,6 +443,7 @@ ul, li{
 	transition: transform 0.6 ease;
 }
 #services_t1.active, #services_t2.active, #services_t3.active{
+	line-height: 21px;
 	display: inherit;
 	position: relative;
 }
