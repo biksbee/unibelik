@@ -1121,15 +1121,11 @@ footer{
     .how_content{
 		display: block;
 	}	
-	.chisla{
-		margin: 0 35%;
-		-webkit-text-stroke-width: 1px;
-    	-webkit-text-stroke-color: black;
-		position: inherit;
-	}
-
 	.chisla_back{
-		display: none;
+	    margin: 0 35%;
+	    -webkit-text-stroke-width: 1px;
+    	    -webkit-text-stroke-color: black;
+	    position: inherit;
 	}
 	.about_img{
 		display: none;
