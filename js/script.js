@@ -1,11 +1,4 @@
-$(document).ready(function(){
-    $("#header_menu, .vstup_zayvka, .about_kl").on("click","a", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
-});
+
 
 $(document).ready(function(){  
   $("#rus, #eng").click(function(){     
